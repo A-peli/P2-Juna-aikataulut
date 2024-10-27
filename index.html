@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake Store API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Fake Store</h1>
+    <!-- Dropdown and button for user to initiate new search -->
+    <div class="controls">
+      <label for="category">Choose a category:</label>
+      <select id="category">
+        <option value="electronics">Electronics</option>
+        <option value="jewelery">Jewelery</option>
+        <option value="men's clothing">Men's Clothing</option>
+        <option value="women's clothing">Women's Clothing</option>
+      </select>
+      <button id="fetchData">Fetch Products</button>
+    </div>
+
+    <!-- Display area for fetched data -->
+    <div id="productList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
