@@ -36,7 +36,7 @@ YHTEENSÄ: 5h
 ## Table of Content:
 
 - [Perustiedot sovelluksesta](#perustiedot-sovelluksesta)
-- [Näytönkaappaus](#näytönkaappaus)
+- [Kuvankaappaus](#kuvankaappaus)
 - [Teknologiat](#teknologiat)
 - [Asennus](#asennus)
 - [Johdatus](#johdatus)
@@ -46,7 +46,7 @@ YHTEENSÄ: 5h
 
 ## Perustiedot sovelluksesta
 
-## Näytönkaappaus
+## kuvankaappaus
 ![Feikkikauppa](https://i.imgur.com/hOlYyyi.png)
 
 ## Teknologiat
