@@ -1,4 +1,4 @@
-// Annetaan elementtien latautua ja vasta sitten haetaan DOM-elementit (nuolifunktiolla)
+// Annetaan elementtien latautua ja vasta sitten haetaan DOM-elementit ja ajetaan loput koodista (nuolifunktiolla)
 document.addEventListener("DOMContentLoaded", () => {
     const categorySelect = document.getElementById("category");
     const fetchDataButton = document.getElementById("fetchData");
@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.getElementById("searchInput");
     const searchButton = document.getElementById("searchButton");
 
-    // Clickatessa suoritetaan nuolifunktio (haetaan valittu category)
+
+    /* HAKUTOIMINNOT DROPDOWN KATEGORIA & CUSTOM STRING HAKU */
+    // klikatessa haetaan valittu kategoria
     fetchDataButton.addEventListener("click", () => {
       const category = categorySelect.value;
       fetchProductsByCategory(category);
@@ -20,6 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
+
+    /* TUOTTEIDEN HAKEMINEN VALITULLA HAKUTAVALLA  */
     // Haetaan API:lta valitun kategorian tuotteet
     function fetchProductsByCategory(category) {
       const url = `https://fakestoreapi.com/products/category/${encodeURIComponent(category)}`;
@@ -29,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(products => displayProducts(products))
         .catch(error => console.error("Failed to fetch data", error));
     }
-  
+    //Haetaan API:lta valitut tuotteet (hakusanan mukaan)
     function fetchProductsBySearch(searchTerm) {
         const url = `https://fakestoreapi.com/products`;
   
