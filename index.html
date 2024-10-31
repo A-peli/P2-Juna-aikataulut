@@ -5,22 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fake Store API training</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+  
 </head>
 <body>
   <div class="container">
-    <h1>Fake Store</h1>
+    <h1>Feikkikauppa</h1>
     <!-- Dropdown and button for user to initiate new search -->
     <div class="controls">
-      <label for="category">Choose a category:</label>
+      <label for="category">Valitse kategoria:</label>
       <select id="category">
-        <option value="electronics">Electronics</option>
-        <option value="jewelery">Jewelery</option>
-        <option value="men's clothing">Men's Clothing</option>
-        <option value="women's clothing">Women's Clothing</option>
+        <option value="electronics">Elektroniikka</option>
+        <option value="jewelery">Korut</option>
+        <option value="men's clothing">Miesten vaatteet</option>
+        <option value="women's clothing">Naisten vaatteet</option>
       </select>
-      <button id="fetchData">Fetch Products</button>
+      <button id="fetchData">Hae tuotteet</button>
     </div>
-
+    <hr>
+    <div>
+      <input type="text" id="searchInput" placeholder="Etsi tuotteita...">
+      <button id="searchButton">Etsi</button>
+    </div>
     <!-- Display area for fetched data -->
     <div id="productList"></div>
   </div>
