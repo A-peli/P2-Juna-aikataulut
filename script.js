@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
       fetch(url)
         .then(response => response.json())
         .then(products => displayProducts(products))
-/*         .catch(error => console.error("Failed to fetch data", error)); */
     }
     //Haetaan API:lta valitut tuotteet (hakusanan mukaan)
     function fetchProductsBySearch(searchTerm) {
@@ -46,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
             );
             displayProducts(filteredProducts);
           })
- /*          .catch(error => console.error("Failed to fetch data", error)); */
       }
 
     // Näytetään tuotteet productList-elementissä
